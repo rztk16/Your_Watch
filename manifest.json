@@ -1,0 +1,17 @@
+{
+    "manifest_version": 3,
+    "name": "the ONE",
+    "version": "1.0",
+    "description": "Movie Skipper is a smart Chrome extension that enhances your movie-watching experience by allowing you to skip objectionable content based on your preferences. Whether you want to avoid violence, explicit language, or other sensitive content, Movie Skipper leverages AI technology to intelligently identify and skip scenes that don't align with your viewing preferences.",
+    "permissions": [
+       "tabs",
+      "activeTab",
+      "storage","declarativeContent" ],
+    "host_permissions":["https://*.youtube.com/*"],
+   
+      "action": {
+      "default_popup": "popup.html"
+      
+    }
+  }
+  

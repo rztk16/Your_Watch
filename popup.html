@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your watch</title>
+    <link rel="stylesheet" href="popup.css">
+    <script src="popup.js" defer></script>
+</head>
+<body>
+    <div id="message"></div>
+    <script src="https://www.youtube.com/iframe_api"></script>    <div id="player"></div>
+
+    <div class="tabs">
+        <button class="tablink" id="skipTabBtn">Skip</button>
+        <button class="tablink" id="findTabBtn">Find</button>
+    </div>
+
+    <div id="skipTab" class="tabcontent">
+        <h2>Skip Settings</h2>
+        <form id="skipForm">
+            <label><input type="checkbox" name="skipViolence"> Skip Violence & Gore</label><br>
+            <label><input type="checkbox" name="skipNudity"> Skip Nudity</label><br>
+            <label><input type="checkbox" name="skipProfanity"> Skip Profanity</label><br>
+            <label><input type="checkbox" name="skipSubstances"> Skip Substance Use</label><br>
+            <label><input type="checkbox" name="skipIntense"> Skip Intense Scenes</label><br>
+            <label>Custom Skip:</label><br>
+            <textarea name="customSkip" id="customSkipInput" rows="3" cols="30" placeholder="Describe what you want to skip"></textarea><br>
+            <button type="button" id="skipBtn">Apply</button>
+        </form>
+        <div id="skipOutput"></div>
+        <p id="output"></p>
+    </div>
+
+    <div id="findTab" class="tabcontent">
+        <h2>What are you looking for?</h2>
+        <textarea name="find" id="findIt" rows="3" cols="30" placeholder="Describe what you want to find"></textarea><br>
+        <button type="button" id="findBtn">Find</button>
+        <div id="output"></div>
+        <p id="output"></p>
+    </div>
+</body>
+</html>
